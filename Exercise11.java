@@ -106,7 +106,7 @@ public class Triangle extends GeometricObject {
     /** Calculates and returns Triangle object Area based on Heron's Formula */
     public double getArea(){
         double semiPerimeter = this.getPerimeter() / 2;
-        return Math.sqrt((semiPerimeter) * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));;
+        return Math.sqrt((semiPerimeter) * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
     }
     /** Calculates and returns Triangle object Perimeter */
     public double getPerimeter(){
