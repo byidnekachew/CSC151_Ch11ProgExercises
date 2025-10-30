@@ -90,7 +90,8 @@ public class Triangle extends GeometricObject {
     }
     
     public double getArea(){
-        return 1.0;
+        double semiPerimeter = this.getPerimeter() / 2;
+        return Math.sqrt((semiPerimeter) * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));;
     }
     public double getPerimeter(){
         return (this.side1 + this.side2 + this.side3);
